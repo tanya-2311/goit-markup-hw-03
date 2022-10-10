@@ -11,6 +11,12 @@
 /* logo-color: #000000; */
 /* color-adress: #FFFFFF */
 /* color-info: color: rgba(255, 255, 255, 0.6); */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
 :root {
     --brand-color: #2196F3;
     --main-text-color: #757575;

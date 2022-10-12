@@ -11,6 +11,10 @@
 /* logo-color: #000000; */
 /* color-adress: #FFFFFF */
 /* color-info: color: rgba(255, 255, 255, 0.6); */
+html {
+    box-sizing: border-box;
+}
+
 *,
 *::before,
 *::after {
@@ -54,9 +58,26 @@ ul {
     list-style: none;
 }
 
+.container {
+    display: inline-block;
+    width: 1200px;
+
+
+}
+
 /* HEADER */
 .header {
     background-color: var(--secondary-text-color);
+    display: flex;
+    justify-content: space-between;
+}
+
+/* header -навігація */
+
+.header-nav {
+    display: flex;
+    width: 281px;
+
 }
 
 /* LOGO */
@@ -67,6 +88,8 @@ ul {
     font-weight: 700;
     font-size: 26px;
     line-height: 1.19;
+    width: 145px;
+    display: flex;
 
 }
 
@@ -78,6 +101,12 @@ ul {
     color: var(--secondary-text-color);
 }
 
+/* навігація хедера */
+.site-nav {
+    display: flex;
+    justify-content: space-between;
+}
+
 .site-nav .link {
     color: var(--primary-text-color);
     text-decoration: none;
@@ -86,6 +115,7 @@ ul {
     line-height: 1.14;
     letter-spacing: 0.02em;
     font-style: normal;
+    display: flex;
 
 
 }
@@ -94,6 +124,10 @@ ul {
 .site-nav .link:hover,
 .site-nav .link:focus {
     color: var(--brand-color);
+}
+
+.nav-contacts {
+    display: flex;
 }
 
 .title-contact {
@@ -140,6 +174,7 @@ ul {
     align-items: center;
     text-align: center;
     letter-spacing: 0.06em;
+
 
 }
 

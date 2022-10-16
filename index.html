@@ -22,22 +22,27 @@
   </head>
   <body>
     <!-- Header -->
-    <div class="container">
-      <header class="header">
+    <header class="header">
+      <div class="container main-nav">
+        <a class="logo" href="./index.html">Web<span class="logo-studio">Studio</span> </a>
         <nav class="header-nav">
-          <a class="logo" href="./index.html">Web<span class="logo-studio">Studio</span> </a>
           <ul class="site-nav">
-            <li><a href="./index.html" class="link current">Студія</a></li>
-            <li><a href="./portfolio.html" class="link">Портфоліо</a></li>
-            <li><a href="./" class="link">Контакти</a></li>
+            <li class="header-link"><a href="./index.html" class="link current">Студія</a></li>
+            <li class="header-link"><a href="./portfolio.html" class="link">Портфоліо</a></li>
+            <li class="header-link"><a href="./" class="link">Контакти</a></li>
           </ul>
         </nav>
         <ul class="nav-contacts">
-          <li><a class="title-contact" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-          <li><a class="title-contact" href="tel:+380961111111">+38 096 111 11 11</a></li>
+          <li class="contact-item">
+            <a class="title-contact" href="mailto:info@devstudio.com">info@devstudio.com</a>
+          </li>
+          <li class="contact-item">
+            <a class="title-contact" href="tel:+380961111111">+38 096 111 11 11</a>
+          </li>
         </ul>
-      </header>
-    </div>
+      </div>
+    </header>
+
     <main>
       <!--section hero-->
       <div class="container">
@@ -47,8 +52,9 @@
         </section>
       </div>
       <!-- section наші oсобливості-->
-      <div class="container">
-        <section>
+
+      <section>
+        <div class="container features">
           <h2 class="vissually-hidden">Наші особливості</h2>
           <ul class="section-features">
             <li>
@@ -76,22 +82,26 @@
               </p>
             </li>
           </ul>
-        </section>
-      </div>
+        </div>
+      </section>
+
       <!-- section Чим ми займаємся  service-->
-      <div class="container">
-        <section>
+
+      <section>
+        <div class="container">
           <h2 class="service-title">Чим ми займаємося</h2>
           <ul>
             <li><img src="./images/service1.jpg" alt="service1" width="370" /></li>
             <li><img src="./images/service2.jpg" alt="service2" width="370" /></li>
             <li><img src="./images/service3.jpg" alt="service3" width="370" /></li>
           </ul>
-        </section>
-      </div>
+        </div>
+      </section>
+
       <!--section Наша команда-->
-      <div class="container">
-        <section class="comand">
+
+      <section class="comand">
+        <div class="container">
           <h2 class="comand-title">Наша команда</h2>
           <ul>
             <li>
@@ -115,12 +125,13 @@
               <p class="position-title">UI Designer</p>
             </li>
           </ul>
-        </section>
-      </div>
+        </div>
+      </section>
     </main>
     <!--footer-->
-    <div class="container">
-      <footer class="footer">
+
+    <footer class="footer">
+      <div class="container">
         <a class="logo" href="./index.html">Web<span class="logo-studiof">Studio</span> </a>
         <address class="footer-adress">
           <ul>
@@ -139,7 +150,7 @@
             <li><a class="title-contact" href="tel:+380961111111">+38 096 111 11 11</a></li>
           </ul>
         </address>
-      </footer>
-    </div>
+      </div>
+    </footer>
   </body>
 </html>

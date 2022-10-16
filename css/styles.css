@@ -11,15 +11,15 @@
 /* logo-color: #000000; */
 /* color-adress: #FFFFFF */
 /* color-info: color: rgba(255, 255, 255, 0.6); */
-html {
+/* html {
     box-sizing: border-box;
 }
 
 *,
 *::before,
 *::after {
-    box-sizing: border-box;
-}
+    box-sizing: inherit;
+} */
 
 :root {
     --brand-color: #2196F3;
@@ -34,8 +34,6 @@ html {
     --backrground-secondary: #2F303A;
     --primery-font: Roboto, san-serif;
     --secondary-font: Raleway, san-serif;
-
-
 }
 
 body {
@@ -47,6 +45,7 @@ body {
     line-height: 1.71; */
     font-size: 14px;
     letter-spacing: 0.03em;
+    margin: 0px;
 }
 
 /* h2,
@@ -59,29 +58,48 @@ ul {
 }
 
 .container {
-    display: inline-block;
-    width: 1200px;
-
+    width: 1230px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    outline: 2px solid red;
 
 }
 
 /* HEADER */
 .header {
     background-color: var(--secondary-text-color);
-    display: flex;
-    justify-content: space-between;
+
+
 }
+
+
+/* main-nav ставимо навігацію в ряд */
+.main-nav {
+    display: flex;
+    align-items: center;
+    /* justify-content: space-evenly; */
+}
+
 
 /* header -навігація */
-
 .header-nav {
-    display: flex;
-    width: 281px;
+    /* display: flex; */
+    /* display: flex;
+    align-items: center;
+    justify-content: start; */
 
 }
+
+.header-link {}
 
 /* LOGO */
 .logo {
+    display: flex;
+    margin-right: 93px;
+    /* padding-left: 215px; */
+
     color: var(--brand-color);
     text-decoration: none;
     font-family: var(--secondary-font);
@@ -89,7 +107,6 @@ ul {
     font-size: 26px;
     line-height: 1.19;
     width: 145px;
-    display: flex;
 
 }
 
@@ -104,10 +121,25 @@ ul {
 /* навігація хедера */
 .site-nav {
     display: flex;
-    justify-content: space-between;
+
 }
 
+/* очистка крайньої геометрії, запрали в останного ел маргін */
+.site-nav .header-link:not(:last-child) {
+    /* background-color: red; */
+    margin-right: 50px;
+}
+
+
+/* .site-nav .header-link:last-child {
+    margin-right: 0; */
+/* } */
+
 .site-nav .link {
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
+
     color: var(--primary-text-color);
     text-decoration: none;
     font-family: var(--primery-font);
@@ -115,8 +147,6 @@ ul {
     line-height: 1.14;
     letter-spacing: 0.02em;
     font-style: normal;
-    display: flex;
-
 
 }
 
@@ -128,6 +158,12 @@ ul {
 
 .nav-contacts {
     display: flex;
+    margin-left: auto;
+    /* background-color: red; */
+}
+
+.nav-contacts .contact-item+.contact-item {
+    margin-left: 50px;
 }
 
 .title-contact {
@@ -148,21 +184,39 @@ ul {
 .hero {
     background-color: var(--backrground-secondary);
     color: var(--secondary-text-color);
+    text-align: center;
+    height: 600px;
+
 }
 
 .hero-title {
+    margin: auto;
+    padding-top: 200px;
+
     font-style: normal;
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
-    text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
-    white-space: normal;
+
+    width: 696px;
+    /* padding-top: 200px;
+    padding-left: 452px;
+    padding-bottom: 280px;
+    padding-right: 452px;
+    margin-top: 30px;
+    margin-bottom: 0px; */
 
 }
 
 .button-main {
+    display: inline-block;
+    border-radius: 4px;
+    min-width: 216px;
+    height: 50px;
+    margin-top: 30px;
+
     background-color: var(--brand-color);
     color: var(--secondary-text-color);
     cursor: pointer;
@@ -185,6 +239,10 @@ ul {
 }
 
 /* section-features */
+.features {
+    display: inline-block;
+}
+
 .vissually-hidden {
     position: absolute;
     width: 1px;
@@ -205,6 +263,7 @@ ul {
 }
 
 .features-title {
+
     font-style: normal;
     font-weight: 400;
     line-height: 1.71;

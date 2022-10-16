@@ -64,7 +64,13 @@ ul {
     padding-left: 15px;
     padding-right: 15px;
     outline: 2px solid red;
+}
 
+h1,
+h2,
+h3,
+p {
+    margin: 0;
 }
 
 /* HEADER */
@@ -97,8 +103,7 @@ ul {
 /* LOGO */
 .logo {
     display: flex;
-    margin-right: 93px;
-    /* padding-left: 215px; */
+    padding-right: 93px;
 
     color: var(--brand-color);
     text-decoration: none;
@@ -190,6 +195,7 @@ ul {
 }
 
 .hero-title {
+    width: 696px;
     margin: auto;
     padding-top: 200px;
 
@@ -199,14 +205,6 @@ ul {
     line-height: 1.36;
     letter-spacing: 0.06em;
     text-transform: uppercase;
-
-    width: 696px;
-    /* padding-top: 200px;
-    padding-left: 452px;
-    padding-bottom: 280px;
-    padding-right: 452px;
-    margin-top: 30px;
-    margin-bottom: 0px; */
 
 }
 
@@ -239,9 +237,9 @@ ul {
 }
 
 /* section-features */
-.features {
+/* .features {
     display: inline-block;
-}
+} */
 
 .vissually-hidden {
     position: absolute;
@@ -257,16 +255,33 @@ ul {
     overflow: hidden;
 }
 
-.section-features .title {
-    color: var(--primary-text-color);
+.section-features {
+    display: flex;
+    width: 1170px;
+    margin: 0;
+    padding: 0;
+    padding-top: 94px;
+    /* margin-left: -30px;  */
 
 }
 
-.features-title {
+.section-features .title {
+    color: var(--primary-text-color);
+    margin-bottom: 10px;
+
+}
+
+.section-features>.item {
+    width: 270px;
+    flex-wrap: wrap;
+    flex-basis: calc(100%/4 - 30px);
+    margin-left: 30px;
+    padding-bottom: 94px;
 
     font-style: normal;
     font-weight: 400;
     line-height: 1.71;
+
 }
 
 .title {
@@ -278,6 +293,25 @@ ul {
 }
 
 /* section-servise */
+
+.service-photo {
+    width: 1170px;
+    display: flex;
+
+    justify-content: space-between;
+
+    padding-bottom: 94px;
+}
+
+
+
+
+
+
+
+
+
+
 .service-title,
 .comand-title {
     font-style: normal;

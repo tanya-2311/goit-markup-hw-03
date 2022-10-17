@@ -24,7 +24,9 @@
     <!-- Header -->
     <header class="header">
       <div class="container main-nav">
-        <a class="logo" href="./index.html">Web<span class="logo-studio">Studio</span> </a>
+        <div logo-header>
+          <a class="logo" href="./index.html">Web<span class="logo-studio">Studio</span> </a>
+        </div>
         <nav class="header-nav">
           <ul class="site-nav">
             <li class="header-link"><a href="./index.html" class="link current">Студія</a></li>
@@ -109,38 +111,47 @@
       <section class="comand">
         <div class="container">
           <h2 class="comand-title">Наша команда</h2>
-          <ul>
-            <li>
-              <img src="./images/demjanenko.jpg" alt="foto demjanenko" width="270" />
-              <h3 class="name-title">Ігор Дем'яненко</h3>
-              <p class="position-title">Product Designer</p>
+          <ul class="our-comand">
+            <li class="photo-comand">
+              <img src="./images/demjanenko.jpg" alt="foto demjanenko" width="270" height="260" />
+              <div class="comand-position">
+                <h3 class="name-title">Ігор Дем'яненко</h3>
+                <p class="position-title">Product Designer</p>
+              </div>
             </li>
-            <li>
-              <img src="./images/repina.jpg" alt="foto repina" width="270" />
-              <h3 class="name-title">Ольга Рєпіна</h3>
-              <p class="position-title">Frontend Developer</p>
+            <li class="photo-comand">
+              <img src="./images/repina.jpg" alt="foto repina" width="270" height="260" />
+              <div class="comand-position">
+                <h3 class="name-title">Ольга Рєпіна</h3>
+                <p class="position-title">Frontend Developer</p>
+              </div>
             </li>
-            <li>
-              <img src="./images/foto-tarasov.jpg" alt="foto tarasov" width="270" />
-              <h3 class="name-title">Микола Тарасов</h3>
-              <p class="position-title">Marketing</p>
+            <li class="photo-comand">
+              <img src="./images/foto-tarasov.jpg" alt="foto tarasov" width="270" height="260" />
+              <div class="comand-position">
+                <h3 class="name-title">Микола Тарасов</h3>
+                <p class="position-title">Marketing</p>
+              </div>
             </li>
-            <li>
-              <img src="./images/yermakov.jpg" alt="foto yermakov" width="270" />
-              <h3 class="name-title">Михайло Єрмаков</h3>
-              <p class="position-title">UI Designer</p>
+            <li class="photo-comand">
+              <img src="./images/yermakov.jpg" alt="foto yermakov" width="270" height="260" />
+              <div class="comand-position">
+                <h3 class="name-title">Михайло Єрмаков</h3>
+                <p class="position-title">UI Designer</p>
+              </div>
             </li>
           </ul>
         </div>
       </section>
     </main>
     <!--footer-->
-
-    <footer class="footer">
-      <div class="container">
-        <a class="logo" href="./index.html">Web<span class="logo-studiof">Studio</span> </a>
+    <div class="container">
+      <footer class="footer">
+        <div class="logo-footer">
+          <a class="logo" href="./index.html">Web<span class="logo-studiof">Studio</span> </a>
+        </div>
         <address class="footer-adress">
-          <ul>
+          <ul class="footer-item">
             <li>
               <a
                 class="title-adress"
@@ -156,7 +167,7 @@
             <li><a class="title-contact" href="tel:+380961111111">+38 096 111 11 11</a></li>
           </ul>
         </address>
-      </div>
-    </footer>
+      </footer>
+    </div>
   </body>
 </html>

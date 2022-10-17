@@ -30,7 +30,7 @@
     --button-text-focus: #188CE8;
 
     --color-info: rgba(255, 255, 255, 0.6);
-    /* --backrground-main: #F5F5F5; */
+    --backrground-comand: #F5F4FA;
     --backrground-secondary: #2F303A;
     --primery-font: Roboto, san-serif;
     --secondary-font: Raleway, san-serif;
@@ -76,6 +76,10 @@ p {
 /* HEADER */
 .header {
     background-color: var(--secondary-text-color);
+    padding: 0;
+
+    margin: auto;
+
 
 
 }
@@ -85,7 +89,8 @@ p {
 .main-nav {
     display: flex;
     align-items: center;
-    /* justify-content: space-evenly; */
+    margin: auto;
+    /* justify-content: c; */
 }
 
 
@@ -101,9 +106,13 @@ p {
 .header-link {}
 
 /* LOGO */
+.logo-header {
+    padding-left: 215px;
+}
+
 .logo {
     display: flex;
-    padding-right: 93px;
+    /* padding-left: 215px; */
 
     color: var(--brand-color);
     text-decoration: none;
@@ -117,6 +126,7 @@ p {
 
 .logo-studio {
     color: var(--logo-text-color);
+
 }
 
 .logo-studiof {
@@ -237,9 +247,7 @@ p {
 }
 
 /* section-features */
-/* .features {
-    display: inline-block;
-} */
+
 
 .vissually-hidden {
     position: absolute;
@@ -257,6 +265,7 @@ p {
 
 .section-features {
     display: flex;
+
     width: 1170px;
     margin: 0;
     padding: 0;
@@ -272,6 +281,7 @@ p {
 }
 
 .section-features>.item {
+    display: flex;
     width: 270px;
     flex-wrap: wrap;
     flex-basis: calc(100%/4 - 30px);
@@ -284,7 +294,8 @@ p {
 
 }
 
-.title {
+.service-title {
+    padding-bottom: 50px;
     font-style: normal;
     font-weight: 700;
     font-size: 14px;
@@ -297,17 +308,21 @@ p {
 .service-photo {
     width: 1170px;
     display: flex;
-
-    justify-content: space-between;
+    padding: 0;
+    margin: auto;
 
     padding-bottom: 94px;
 }
 
+.photo-item {
+    width: 370px;
+    margin-right: 30px;
 
+}
 
-
-
-
+.photo-item:nth-child(3n) {
+    margin-right: 0;
+}
 
 
 
@@ -325,14 +340,39 @@ p {
 
 /* <!--section Наша команда--> */
 .comand {
-    background-color: var(--secondary-text-color);
+    background-color: var(--backrground-comand);
+}
+
+.our-comand {
+    width: 1170px;
+    display: flex;
+    padding: 0;
+    margin: auto;
+    padding-bottom: 94px;
+}
+
+.photo-comand {
+    margin-right: 30px;
+    /* padding-bottom: 94px; */
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+.photo-comand:nth-child(4n) {
+    margin-right: 0;
 }
 
 .comand-title {
+    padding-bottom: 50px;
     color: var(--primary-text-color);
 }
 
+.comand-position {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
 .name-title {
+    padding-bottom: 10px;
     font-style: normal;
     color: var(--primary-text-color);
     font-weight: 500;
@@ -351,9 +391,23 @@ p {
 /* footer */
 .footer {
     background-color: var(--backrground-secondary);
+
+}
+
+.logo-footer {
+    padding-top: 60px;
+    padding-bottom: 20px;
+    padding-left: 215px;
+}
+
+.footer-item {
+    padding-left: 215px;
+    padding-bottom: 60px;
 }
 
 .title-adress {
+    padding-bottom: 9px;
+
     text-decoration: none;
     color: var(--secondary-text-color);
     line-height: 1.71;
@@ -362,6 +416,8 @@ p {
 }
 
 .title-contact {
+    padding-bottom: 9px;
+
     font-style: normal;
     font-weight: 400;
     line-height: 1.71;

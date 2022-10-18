@@ -34,6 +34,8 @@
     --backrground-secondary: #2F303A;
     --primery-font: Roboto, san-serif;
     --secondary-font: Raleway, san-serif;
+    --border-background: #ECECEC;
+    --border-photo: #EEEEEE;
 }
 
 body {
@@ -63,7 +65,7 @@ ul {
     margin-right: auto;
     padding-left: 15px;
     padding-right: 15px;
-    outline: 2px solid red;
+    /* outline: 2px solid red; */
 }
 
 h1,
@@ -79,9 +81,7 @@ p {
     padding: 0;
 
     margin: auto;
-
-
-
+    border-bottom: 1px solid var(--border-background)
 }
 
 
@@ -103,7 +103,7 @@ p {
 
 }
 
-.header-link {}
+/* .header-link {} */
 
 /* LOGO */
 .logo-header {
@@ -424,16 +424,34 @@ p {
 }
 
 /*  PORTFOLIO */
-/* main hero- */
-/* .main-portfolio {
-    /* background-color: var(--backrground-main); */
-/* } */
+
+
+/* buttons-potfolio */
+.buttons-portfolio {
+    display: flex;
+    margin: 0;
+    /* outline: 2px solid green; */
+    padding-top: 94px;
+    padding-bottom: 34px;
+    text-align: center;
+    justify-content: center;
+}
+
+.button-portfolio {
+    margin-right: 9px;
+
+}
+
+.button-portfolio:nth-child(5n) {
+    margin-right: 0;
+}
 
 /* button-filtr */
 .button-filtr {
-    background-color: var(--secondary-text-color);
+    background-color: var(--backrground-comand);
     color: var(--primary-text-color);
     cursor: pointer;
+    border-radius: 4px;
     font-family: var(--primery-font);
     font-style: normal;
     font-weight: 500;
@@ -446,16 +464,49 @@ p {
 .button-filtr:hover {
     color: var(--secondary-text-color);
     background-color: var(--brand-color);
+
+
 }
 
 .button-filtr:focus {
     color: var(--secondary-text-color);
     background-color: var(--brand-color);
+    border-radius: 4px;
+
 }
 
+/* photo-portfolio */
+.photo-portfolio {
+    /* outline: 2px solid tomato; */
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+    margin: auto;
+    padding-bottom: 94px;
+
+
+}
+
+.filtr-item {
+    margin-right: 30px;
+    margin-bottom: 30px;
+    border: 1px solid var(--border-photo)
+}
+
+.filtr-item:nth-child(3n) {
+    margin-right: 0;
+}
+
+.filtr-item:nth-last-child(-n+3) {
+    margin-bottom: 0;
+}
 
 /* portfolio-title */
 .portfolio-title {
+    padding-top: 20px;
+    padding-bottom: 4px;
+    padding-left: 24px;
+
     color: var(--primary-text-color);
     font-style: normal;
     font-weight: 700;
@@ -466,6 +517,8 @@ p {
 
 /* title-filtr */
 .title-filtr {
+    padding-bottom: 20px;
+    padding-left: 24px;
     font-style: normal;
     font-weight: 400;
     font-size: 16px;

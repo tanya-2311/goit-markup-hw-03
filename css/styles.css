@@ -488,6 +488,9 @@ p {
 }
 
 .filtr-item {
+
+    margin: auto;
+
     margin-right: 30px;
     margin-bottom: 30px;
     border: 1px solid var(--border-photo)

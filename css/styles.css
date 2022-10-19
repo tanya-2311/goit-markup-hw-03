@@ -60,7 +60,7 @@ ul {
 }
 
 .container {
-    width: 1230px;
+    width: 1200px;
     margin-left: auto;
     margin-right: auto;
     padding-left: 15px;
@@ -71,6 +71,9 @@ ul {
 h1,
 h2,
 h3,
+h4,
+h5,
+h6,
 p {
     margin: 0;
 }
@@ -94,21 +97,7 @@ p {
 }
 
 
-/* header -навігація */
-/* .header-nav  */
-/* display: flex; */
-/* display: flex;
-    align-items: center;
-    justify-content: start; */
-
-
-
-/* .header-link {} */
-
 /* LOGO */
-.logo-header {
-    padding-left: 215px;
-}
 
 .logo {
     display: flex;
@@ -144,7 +133,6 @@ p {
     /* background-color: red; */
     margin-right: 50px;
 }
-
 
 /* .site-nav .header-link:last-child {
     margin-right: 0; */
@@ -248,7 +236,6 @@ p {
 
 /* section-features */
 
-
 .vissually-hidden {
     position: absolute;
     width: 1px;
@@ -306,7 +293,7 @@ p {
 /* section-servise */
 
 .service-photo {
-    width: 1170px;
+
     display: flex;
     padding: 0;
     margin: auto;
@@ -325,7 +312,11 @@ p {
 }
 
 
+.comand-title {
+    padding-top: 94px;
+    padding-bottom: 50px;
 
+}
 
 .service-title,
 .comand-title {
@@ -338,13 +329,15 @@ p {
 
 }
 
+
+
 /* <!--section Наша команда--> */
 .comand {
     background-color: var(--backrground-comand);
 }
 
 .our-comand {
-    width: 1170px;
+    /* width: 1170px; */
     display: flex;
     padding: 0;
     margin: auto;
@@ -424,8 +417,6 @@ p {
 }
 
 /*  PORTFOLIO */
-
-
 /* buttons-potfolio */
 .buttons-portfolio {
     display: flex;
@@ -487,13 +478,12 @@ p {
 
 }
 
+
 .filtr-item {
-
-    margin: auto;
-
     margin-right: 30px;
     margin-bottom: 30px;
-    border: 1px solid var(--border-photo)
+    border-bottom: 1px solid var(--border-photo);
+
 }
 
 .filtr-item:nth-child(3n) {

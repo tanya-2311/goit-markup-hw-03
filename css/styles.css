@@ -436,22 +436,23 @@ button {
 /* footer */
 .footer {
     background-color: var(--backrground-secondary);
-
+    padding: 60px 0;
 }
 
-.logo-footer {
+/* .logo-footer {
     /* padding-top: 60px;
     padding-bottom: 20px;
     padding-left: 215px; */
+.footer-adress {
+    margin-top: 20px;
 }
 
 .footer-item {
-    padding-left: 215px;
-    padding-bottom: 60px;
+    padding-bottom: 9px;
 }
 
 .title-adress {
-    padding-bottom: 9px;
+
 
     text-decoration: none;
     color: var(--secondary-text-color);
@@ -460,8 +461,8 @@ button {
     font-weight: 400;
 }
 
-.footer-contact>.title-contact {
-    padding-bottom: 9px;
+.footer-item>.title-contact {
+
 
     font-style: normal;
     font-weight: 400;
@@ -474,14 +475,14 @@ button {
     display: flex;
     margin: 0;
     /* outline: 2px solid green; */
-    padding-top: 94px;
     padding-bottom: 34px;
     text-align: center;
     justify-content: center;
 }
 
 .button-portfolio {
-    margin-right: 9px;
+    border: none;
+    margin-right: 8px;
 
 }
 
@@ -518,6 +519,11 @@ button {
 
 }
 
+/* main-portfolio */
+.main-portfolio {
+    padding: 94px 0;
+}
+
 /* photo-portfolio */
 .photo-portfolio {
     /* outline: 2px solid tomato; */
@@ -525,8 +531,6 @@ button {
     flex-wrap: wrap;
     padding: 0;
     margin: auto;
-    padding-bottom: 94px;
-
 
 }
 
@@ -534,7 +538,7 @@ button {
 .filtr-item {
     margin-right: 30px;
     margin-bottom: 30px;
-    border-bottom: 1px solid var(--border-photo);
+    /* border-bottom: 1px solid var(--border-photo); */
 
 }
 
@@ -546,12 +550,19 @@ button {
     margin-bottom: 0;
 }
 
+.title-stule {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 24px;
+    border: 1px solid var(--border-photo);
+    border-top: none;
+
+}
+
 /* portfolio-title */
 .portfolio-title {
-    padding-top: 20px;
-    padding-bottom: 4px;
-    padding-left: 24px;
 
+    padding-bottom: 4px;
     color: var(--primary-text-color);
     font-style: normal;
     font-weight: 700;
@@ -562,8 +573,7 @@ button {
 
 /* title-filtr */
 .title-filtr {
-    padding-bottom: 20px;
-    padding-left: 24px;
+
     font-style: normal;
     font-weight: 400;
     font-size: 16px;

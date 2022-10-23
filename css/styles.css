@@ -138,8 +138,6 @@ button {
 /* LOGO */
 
 .logo {
-    /* display: flex; */
-    /* padding-left: 215px; */
 
     color: var(--brand-color);
     text-decoration: none;
@@ -147,7 +145,7 @@ button {
     font-weight: 700;
     font-size: 26px;
     line-height: 1.19;
-    /* width: 145px; */
+
 
 }
 
@@ -168,13 +166,11 @@ button {
 
 /* очистка крайньої геометрії, запрали в останного ел маргін */
 .site-nav .header-link:not(:last-child) {
-    /* background-color: red; */
+
     margin-right: 50px;
 }
 
-/* .site-nav .header-link:last-child {
-    margin-right: 0; */
-/* } */
+
 
 .site-nav .link {
     display: block;
@@ -308,17 +304,14 @@ button {
 }
 
 .section-features>.item {
-    /* display: flex; */
+
     width: 270px;
-    /* flex-wrap: wrap; */
     flex-basis: calc(100%/4 - 30px);
     margin-left: 30px;
-
-    /* padding-bottom: 94px; */
 }
 
 
-.section-features>.item:nth-first :first-child {
+.section-features>.item:first-child {
     margin-left: 0;
 }
 
@@ -349,8 +342,6 @@ button {
 
     display: flex;
 
-
-
 }
 
 .photo-item {
@@ -363,12 +354,7 @@ button {
     margin-right: 0;
 }
 
-/* 
-.comand-title {
-    padding-top: 94px;
-    margin-bottom: 50px; */
 
-/* } */
 
 .service-title,
 .comand-title {
@@ -439,20 +425,20 @@ button {
     padding: 60px 0;
 }
 
-/* .logo-footer {
-    /* padding-top: 60px;
-    padding-bottom: 20px;
-    padding-left: 215px; */
+
 .footer-adress {
     margin-top: 20px;
 }
 
 .footer-item {
-    padding-bottom: 9px;
+    margin-bottom: 9px;
+}
+
+.footer-item:last-child {
+    margin-bottom: 0;
 }
 
 .title-adress {
-
 
     text-decoration: none;
     color: var(--secondary-text-color);
@@ -463,7 +449,6 @@ button {
 
 .footer-item>.title-contact {
 
-
     font-style: normal;
     font-weight: 400;
     line-height: 1.71;
@@ -473,10 +458,9 @@ button {
 /* buttons-potfolio */
 .buttons-portfolio {
     display: flex;
-    margin: 0;
     /* outline: 2px solid green; */
-    padding-bottom: 34px;
-    text-align: center;
+    margin-bottom: 50px;
+
     justify-content: center;
 }
 
@@ -492,6 +476,8 @@ button {
 
 /* button-filtr */
 .button-filtr {
+    padding: 6px 22px;
+
     background-color: var(--backrground-comand);
     color: var(--primary-text-color);
     cursor: pointer;
@@ -529,8 +515,6 @@ button {
     /* outline: 2px solid tomato; */
     display: flex;
     flex-wrap: wrap;
-    padding: 0;
-    margin: auto;
 
 }
 
@@ -538,8 +522,6 @@ button {
 .filtr-item {
     margin-right: 30px;
     margin-bottom: 30px;
-    /* border-bottom: 1px solid var(--border-photo); */
-
 }
 
 .filtr-item:nth-child(3n) {
@@ -552,6 +534,7 @@ button {
 
 .title-stule {
     padding-top: 20px;
+    padding-right: 24px;
     padding-bottom: 20px;
     padding-left: 24px;
     border: 1px solid var(--border-photo);
@@ -562,7 +545,7 @@ button {
 /* portfolio-title */
 .portfolio-title {
 
-    padding-bottom: 4px;
+    margin-bottom: 4px;
     color: var(--primary-text-color);
     font-style: normal;
     font-weight: 700;
